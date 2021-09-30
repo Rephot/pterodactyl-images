@@ -3,7 +3,7 @@ FROM        node:16-buster-slim
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 
 RUN         apt update \
-            && apt -y install ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential \
+            && apt -y install ffmpeg iproute2 git sqlite3 python3 python tzdata ca-certificates dnsutils build-essential \
             && useradd -m -d /home/container container
 
 USER        container
